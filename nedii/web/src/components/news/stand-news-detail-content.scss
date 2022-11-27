@@ -1,0 +1,17 @@
+@import 'materialize-css';
+@import 'src/constants/Constants.scss';
+
+.StandNewsDetailContentDate { 
+  font-size: $medium-text;
+  margin-bottom: 1em;
+}
+
+.StandNewsDetailContent {
+  &__image {
+    height: 300px;
+    border-radius: 3px;
+    background-position: center;
+    background-size: cover;
+    @extend .z-depth-3;
+  }
+}

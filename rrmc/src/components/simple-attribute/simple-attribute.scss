@@ -1,0 +1,28 @@
+@import '../../../node_modules/materialize-css/sass/materialize.scss';
+@import '../../constants/Constants.scss';
+
+.SimpleAttribute {
+  &--small {
+    font-size: $small-text;
+  }
+
+  &--medium {
+    font-size: $regular-text;
+  }
+
+  &--large {
+    font-size: $subtitle-font-size;
+  }
+
+  &--margin-top-small {
+    margin-top: 4px;
+  }
+
+  &--margin-top-medium {
+    margin-top: 8px;
+  }
+
+  &--margin-top-large {
+    margin-top: 16px;
+  }
+}

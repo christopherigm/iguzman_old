@@ -1,0 +1,14 @@
+.AddStandMultimedia {
+  &__picture {
+    height: 140px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+  }
+
+  &__delete-picture-button {
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+}

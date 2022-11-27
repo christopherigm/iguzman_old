@@ -1,0 +1,21 @@
+@import 'materialize-css';
+
+.MyStands {
+  &__stands-wrapper {
+    margin-bottom: 5px !important;
+  }
+
+  .MenuChoiceMenu {
+    padding: 20px 0;
+    @extend .grey, .lighten-3;
+  }
+
+  &__return-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    border-bottom: solid 1px #e0e0e0;
+  }
+}

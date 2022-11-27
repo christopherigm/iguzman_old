@@ -1,0 +1,27 @@
+@import 'materialize-css';
+@import 'src/constants/Constants.scss';
+
+.StandOptionMenuGrid {
+  display: block;
+
+  .row {
+    margin-bottom: 0;
+  }
+
+  &__items {
+    margin-bottom: 50px;
+    transition: all 0.8s;
+
+    i {
+      display: block;
+      width: 64px;
+      height: 64px;
+      line-height: 64px;
+      border-radius: 32px;
+      margin-left: calc(50% - 32px);
+      text-align: center;
+      font-size: $icons-size;
+      @extend .white-text;
+    }
+  }
+}

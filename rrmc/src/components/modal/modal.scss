@@ -1,0 +1,27 @@
+.Modal {
+  &--small {
+    max-width: 350px;
+  }
+  
+  &--medium {
+    max-width: 450px;
+  }
+  
+  &--large {
+    max-width: 550px;
+  }
+
+  ol {
+    padding-left: 20px !important;
+  }
+
+  li {
+    list-style: decimal !important;
+  }
+
+  .SubTitle {
+    &__text {
+      font-weight: normal;
+    }
+  }
+}

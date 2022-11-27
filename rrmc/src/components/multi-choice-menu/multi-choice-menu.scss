@@ -1,0 +1,30 @@
+.MenuChoiceMenu {
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    transition: all 0.5s;
+  }
+
+  &__item {
+    cursor: pointer;
+
+    i {
+      display: block;
+      padding: 10px;
+      width: 50px;
+      height: 50px;
+      margin: 0 auto;
+      border-radius: 30px;
+      font-size: 2em !important;
+    }
+
+    span {
+      display: block;
+      margin-top: 7px;
+      text-align: center;
+      width: 90px;
+    }
+  }
+}

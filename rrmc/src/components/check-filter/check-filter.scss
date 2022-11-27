@@ -1,0 +1,51 @@
+@import '../../constants/Constants.scss';
+
+.CheckFilter {
+  &__wrapper {
+    margin: 0 !important;
+    box-sizing: border-box;
+  }
+
+  &__name {
+    display: block;
+    width: 100%;
+    font-size: $subtitle-title-cards;
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    display: block;
+    width: 100%;
+
+    &--mini {
+      margin: 5px 0;
+      padding: 0 4px !important;
+    }
+  }
+
+  &__item-wrapper {
+    border: solid 1px rgba($color: #000000, $alpha: 0.1);
+    padding: 3px 0;
+    word-wrap: break-word;
+  }
+
+  &__checkbox {
+    width: 20px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .CheckFilter {
+    &__text {
+      font-size: 1em;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "es": [
+    {
+      "to": "/",
+      "text": "Inicio",
+      "rightLine": true
+    }
+  ],
+  "en": [
+    {
+      "to": "/",
+      "text": "Home",
+      "rightLine": true
+    }
+  ]
+}

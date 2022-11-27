@@ -1,0 +1,60 @@
+@import 'materialize-css';
+
+$supertitle-size: 3em;
+$title-font-size: 2.3em;
+$title-font-size-mobile: 1.8em;
+$subtitle-font-size: 1.4em;
+$subtitle-title-cards: 1.2em;
+$regular-text: 1em;
+$medium-text: 1.15em;
+$small-text: 0.8em;
+
+$subtitle-title-font-weight: 400;
+$title-font-weight: 400;
+$slim-font-weight: 200;
+$medium-font-weight: 600;
+$bold-font-weight: 500;
+
+$items-number: 1.5em;
+$icons-size: 2.3em;
+
+$nav-height: 64px;
+
+$primary-color-name: red;
+
+// Colors
+$white: white;
+$black: black;
+$fruit-salad: #4CAF50;
+
+$regular-border-radius: 8px;
+
+.lemon-black {
+  background-color: $black;
+}
+
+.GenericCard {
+  display: block;
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  background-color: $white;
+  border-radius: $regular-border-radius;
+  transition: all 0.5s;
+  @extend .z-depth-1;
+}
+
+.IsLoadingOpacity {
+  opacity: 0.5;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.ItemSelected {
+  box-shadow: rgb(3, 158, 255) 0 0 15px 0;
+  transition: all 0.5s;
+}

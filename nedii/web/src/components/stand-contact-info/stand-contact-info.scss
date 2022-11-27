@@ -1,0 +1,20 @@
+@import 'materialize-css';
+@import 'src/constants/Constants.scss';
+
+.StandContactInfo {
+  .StrongText {
+    margin-bottom: 15px;
+  }
+
+  .row {
+    margin: 0 -5px !important;
+
+    .col {
+      padding: 0 5px !important;
+    }
+  }
+
+  .TextWithIcon {
+    margin-top: 10px;
+  }
+}

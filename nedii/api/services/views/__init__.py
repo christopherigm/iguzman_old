@@ -1,0 +1,4 @@
+from .service_classifications import ServiceClassificationViewSet
+from .service_features import ServiceFeatureViewSet
+from .service_picture import ServicePictureViewSet
+from .service import ServiceViewSet

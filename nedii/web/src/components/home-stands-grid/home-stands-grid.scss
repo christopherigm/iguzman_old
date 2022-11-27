@@ -1,0 +1,14 @@
+.HomeStandsGrid {
+  .StandItemMini {
+    margin-bottom: 8px !important;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .HomeStandsGrid {
+    .StandItemMini {
+      margin-bottom: 0;
+    }
+  }
+}
+

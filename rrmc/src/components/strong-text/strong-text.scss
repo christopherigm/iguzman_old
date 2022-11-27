@@ -1,0 +1,11 @@
+@import '../../constants/Constants.scss';
+
+.StrongText {
+  &__text {
+    display: block;
+    font-size: $medium-text;
+    font-weight: $bold-font-weight;
+    text-align: center;
+    width: 100%;
+  }
+}

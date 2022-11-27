@@ -1,0 +1,40 @@
+@import 'materialize-css';
+@import 'src/constants/Constants.scss';
+
+.UserDashboard {
+  &__item-card a {
+    border: solid 1px #e0e0e0;
+    display: block;
+    padding: 15px 5px;
+    margin-bottom: 15px;
+  }
+
+  &__item-card-icon,
+  &__item-card-label {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__item-card-icon {
+    font-size: 3em !important;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .UserDashboard {
+    &__item-card a {
+      padding: 20px 10px;
+      margin-bottom: 20px;
+    }
+
+    &__item-card-icon {
+      font-size: 4.5em !important;
+    }
+    
+    &__item-card-label {
+      font-size: 1.2em;
+      font-weight: 500;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.VerticalSpace {
+  display: block;
+  height: 100%;
+
+  &--xx-small {
+    width: 3px;
+  }
+
+  &--x-small {
+    width: 5px;
+  }
+
+  &--small {
+    width: 10px;
+  }
+
+  &--medium {
+    width: 15px;
+  }
+
+  &--large {
+    width: 20px;
+  }
+
+  &--x-large {
+    width: 25px;
+  }
+}

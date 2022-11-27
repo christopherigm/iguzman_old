@@ -1,0 +1,48 @@
+.Ratings {
+  width: fit-content;
+
+  &__star {
+    cursor: pointer;
+
+    &--x-small {
+      font-size: 0.6em !important;
+      text-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
+    }
+    &--small {
+      font-size: 0.8em !important;
+      text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+    }
+    &--medium {
+      font-size: 1em !important;
+      text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+    }
+    &--large {
+      font-size: 1.2em !important;
+      text-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+    }
+    &--x-large {
+      font-size: 1.4em !important;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    }
+    &--xx-large {
+      font-size: 1.6em !important;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    }
+    &--xxx-large {
+      font-size: 1.8em !important;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    }
+    &--huge {
+      font-size: 2em !important;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    }
+    &--x-huge {
+      font-size: 2.2em !important;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    }
+    &--xx-huge {
+      font-size: 2.4em !important;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    }
+  }
+}

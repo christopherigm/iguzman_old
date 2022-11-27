@@ -1,0 +1,22 @@
+@import '../../../node_modules/materialize-css/sass/materialize.scss';
+
+.BasicText {
+  &--light {
+    font-weight: 100;
+    @extend .grey-text, .darken-2;
+  }
+
+  &--normal {
+    @extend .grey-text, .text-darken-4;
+  }
+
+  &--bold {
+    font-weight: bold;
+    @extend .grey-text, .text-darken-4;
+  }
+
+  &--italic {
+    font-style: italic;
+    @extend .grey-text, .text-darken-3;
+  }
+}

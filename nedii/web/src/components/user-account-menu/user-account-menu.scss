@@ -1,0 +1,30 @@
+@import 'materialize-css';
+@import 'src/constants/Constants.scss';
+
+.UserAccount {
+  &__profile-image {
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 200px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  &__menu-item {
+    padding: 8px 10px;
+    display: block;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+    color: #212121;
+
+    &--selected {
+      border-bottom: 2px solid #4dd0e1;
+      font-weight: bold;
+      color: #00acc1;
+      padding: 8px 10px;
+      background-color: #fafafa;
+    }
+  }
+}

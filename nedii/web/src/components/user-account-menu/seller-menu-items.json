@@ -1,0 +1,30 @@
+[
+  {
+    "path": "/mi-cuenta/empresas",
+    "text": "Mi(s) empresa(s)"
+  },
+  {
+    "path": "/mi-cuenta/ventas",
+    "text": "Ventas"
+  },
+  {
+    "path": "/mi-cuenta/productos",
+    "text": "Mis productos"
+  },
+  {
+    "path": "/mi-cuenta/servicios",
+    "text": "Mis servicios"
+  },
+  {
+    "path": "/mi-cuenta/platillos",
+    "text": "Mis platillos"
+  },
+  {
+    "path": "/mi-cuenta/inmuebles",
+    "text": "Mis inmuebles"
+  },
+  {
+    "path": "/mi-cuenta/vehiculos",
+    "text": "Mis vehiculos"
+  }
+]

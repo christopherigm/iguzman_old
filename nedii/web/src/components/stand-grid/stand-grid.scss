@@ -1,0 +1,96 @@
+@import 'materialize-css';
+@import 'src/constants/Constants.scss';
+
+.StandItem {
+  width: 100%;
+  margin-bottom: 20px;
+
+  .GenericCard {
+    position: relative;
+  }
+
+  .GenericCard:hover {
+    @extend .z-depth-3;
+  }
+
+  &__cover {
+    display: block;
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__logo {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-bottom: -35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: white;
+    @extend .z-depth-1;
+  }
+
+  &__name {
+    width: 100%;
+    font-size: $subtitle-title-cards;
+    text-align: center;
+    padding: 50px 0 10px;
+    font-weight: bold;
+  }
+
+  &__slogan {
+    display: block;
+    width: 100%;
+    padding: 0 0 15px;
+    text-align: center;
+  }
+
+  &__restaurant {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 2px solid white;
+    border-radius: 3px;
+    z-index: 2;
+    right: 8px;
+    top: 8px;
+    text-align: center;
+  }
+
+  .StrongText {
+    margin: 0 auto 10px !important;
+  }
+
+  .FavoriteButton {
+    position: absolute;
+    z-index: 2;
+    left: 8px;
+    top: 8px;
+    background-color: white;
+    padding: 4px;
+    font-size: 2em;
+    border-radius: 3px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .StandItem {
+    &__restaurant {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 34px !important;
+    }
+  }
+}

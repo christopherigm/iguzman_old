@@ -1,0 +1,51 @@
+@import 'materialize-css';
+@import 'src/constants/Constants.scss';
+
+.GroupItem {
+  width: 100%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+
+  .GenericCard:hover {
+    @extend .z-depth-3;
+  }
+
+  &__img {
+    display: block;
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    border-radius: 8px;
+    @extend .z-depth-1;
+    margin: 0 auto;
+    margin-bottom: -35px;
+
+    i {
+      font-size: $icons-size;
+      line-height: 70px;
+    }
+  }
+
+  &__name {
+    width: 100%;
+    font-size: $subtitle-title-cards;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .StrongText {
+    margin: 0 auto 10px !important;
+  }
+}

@@ -1,0 +1,7 @@
+replicas: 1
+service:
+  externalPort: 80
+  internalPort: 8080
+host: "jenkins.iguzman.com.mx"
+image: "jenkins/jenkins"
+tag: "lts"

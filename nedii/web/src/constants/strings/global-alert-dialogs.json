@@ -1,0 +1,96 @@
+{
+  "en": {
+    "global-alert-sample-ok": {
+      "success": true,
+      "title": "Global alert",
+      "message": "This is an exmaple of the global alert working just fine!"
+    },
+    "global-alert-sample-fail": {
+      "success": false,
+      "title": "Global alert",
+      "message": "This is an exmaple of the global alert working just fine! Failure"
+    },
+    "missing-login": {
+      "success": false,
+      "title": "Login required",
+      "message": "To complete this action, please sign in o create an account."
+    },
+    "login-generic-failure": {
+      "success": false,
+      "title": "Fail to login",
+      "message": "Ha sucedido un error intentando acceder a su cuenta: {{email}}.<br/><br/>Ppor favor contacte al equipo tecnico mencionando el codigo: <b>\"Error de conexion con el servidor\"</b>."
+    },
+    "login-failure": {
+      "success": false,
+      "title": "Fail to login",
+      "message": "Ha sucedido un error intentando acceder a su cuenta: {{email}}.<br/><br/>Errores:<ol>{{errorMessages}}</ol>Si esta seguro de que los datos son correctos, por favor contacte al equipo tecnico mencionando el codigo: <b>\"{{statusText}} - {{status}}\"</b>."
+    },
+    "registration-generic-failure": {
+      "success": false,
+      "title": "Error al crear cuenta",
+      "message": "<b>{{firstName}}</b>, ha sucedido un error creando su cuenta.<br/><br/>Errores:<ol><li>Error enviando informacion al servidor</li></ol>Por favor contacte al equipo tecnico mencionando el codigo: <b>\"Error de conexion con el servidor\"</b>."
+    },
+    "registration-failure": {
+      "success": false,
+      "title": "Error al crear cuenta",
+      "message": "<b>{{firstName}}</b>, ha sucedido un error creando su cuenta.<br/><br/>Errores:<ol>{{errorMessages}}</ol>Si esta seguro de que los datos son correctos, por favor contacte al equipo tecnico mencionando el codigo: <b>\"{{statusText}} - {{status}}\"</b>."
+    },
+    "registration-success": {
+      "success": true,
+      "title": "Cuenta creada",
+      "message": "<b>{{firstName}}</b>, su cuenta ha sido creada exitosamente.<br/><br/>A continuacion, usted sera redirigido a la pantalla de login, gracias."
+    },
+    "http-request-failed": {
+      "success": false,
+      "title": "Error getting data",
+      "message": "Communication with the server has failed, please try again."
+    }
+  },
+  "es": {
+    "global-alert-sample-ok": {
+      "success": true,
+      "title": "Alerta Global ",
+      "message": "Este es un ejemplo de la alerta global funcionando muy bien!"
+    },
+    "global-alert-sample-fail": {
+      "success": false,
+      "title": "Global alert",
+      "message": "This is an exmaple of the global alert working just fine! Failure"
+    },
+    "missing-login": {
+      "success": false,
+      "title": "Login requerido",
+      "message": "<b>{{firstName}}</b>, su cuenta ha sido creada exitosamente y su cuenta ha iniciado sesion correctamente, gracias."
+    },
+    "login-generic-failure": {
+      "success": false,
+      "title": "Fail to login",
+      "message": "Ha sucedido un error intentando acceder a su cuenta: {{email}}.<br/><br/>Ppor favor contacte al equipo tecnico mencionando el codigo: <b>\"Error de conexion con el servidor\"</b>."
+    },
+    "login-failure": {
+      "success": false,
+      "title": "Acceso fallido",
+      "message": "Ha sucedido un error intentando acceder a su cuenta: {{email}}.<br/><br/>Errores:<ol>{{errorMessages}}</ol>Si esta seguro de que los datos son correctos, por favor contacte al equipo tecnico mencionando el codigo: <b>\"{{statusText}} - {{status}}\"</b>."
+    },
+    "registration-generic-failure": {
+      "success": false,
+      "title": "Error al crear cuenta",
+      "message": "<b>{{firstName}}</b>, ha sucedido un error creando su cuenta.<br/><br/>Errores:<ol><li>Error enviando informacion al servidor</li></ol>Por favor contacte al equipo tecnico mencionando el codigo: <b>\"Error de conexion con el servidor\"</b>."
+    },
+    "registration-failure": {
+      "success": false,
+      "title": "Error al crear cuenta",
+      "message": "<b>{{firstName}}</b>, ha sucedido un error creando su cuenta.<br/><br/>Errores:<ol>{{errorMessages}}</ol>Si esta seguro de que los datos son correctos, por favor contacte al equipo tecnico mencionando el codigo: <b>\"{{statusText}} - {{status}}\"</b>."
+    },
+    "registration-success": {
+      "success": true,
+      "title": "Cuenta creada",
+      "message": "<b>{{firstName}}</b>, su cuenta ha sido creada exitosamente y su cuenta ha iniciado sesion correctamente, gracias."
+    },
+    "http-request-failed": {
+      "success": false,
+      "title": "Error de comunicacion",
+      "message": "La comunicacion con el servidor ha fallado, por favor intentelo de nuevo mas tarde."
+    }
+  }
+}

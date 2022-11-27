@@ -1,0 +1,40 @@
+{
+  "options": [
+    {
+      "icon": "style",
+      "color": "amber darken-2",
+      "href": "ofertas",
+      "text": "Ofertas"
+    },
+    {
+      "icon": "contact_mail",
+      "color": "indigo",
+      "href": "tarjeta-de-negocio",
+      "text": "Tarjeta de nogocio"
+    },
+    {
+      "icon": "assignment",
+      "color": "light-green darken-1",
+      "href": "encuesta",
+      "text": "Encuesta"
+    },
+    {
+      "icon": "store",
+      "color": "light-blue darken-1",
+      "href": "acerca",
+      "text": "Acerca"
+    },
+    {
+      "icon": "ondemand_video",
+      "color": "red",
+      "href": "multimedia",
+      "text": "Multimedia"
+    },
+    {
+      "icon": "room_service",
+      "color": "blue-grey darken-1",
+      "href": "reservaciones",
+      "text": "Reservaciones"
+    }
+  ]
+}

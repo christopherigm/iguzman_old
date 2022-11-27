@@ -1,0 +1,31 @@
+{
+  "es": [
+    {
+      "to": "/",
+      "text": "Inicio"
+    },
+    {
+      "to": "/expos",
+      "text": "Expos"
+    },
+    {
+      "to": "/categorias",
+      "text": "Categorias"
+    }
+  ],
+  "en": [
+    {
+      "to": "/",
+      "text": "Home"
+    },
+    {
+      "to": "/expos",
+      "text": "Expos"
+    },
+    {
+      "to": "/categorias",
+      "text": "Categories",
+      "rightLine": true
+    }
+  ]
+}

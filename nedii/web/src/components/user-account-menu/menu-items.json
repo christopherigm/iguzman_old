@@ -1,0 +1,30 @@
+[
+  {
+    "path": "/mi-cuenta",
+    "text": "Inicio (dashboard)"
+  },
+  {
+    "path": "/mi-cuenta/configuracion",
+    "text": "Configuracion de cuenta"
+  },
+  {
+    "path": "/mi-cuenta/direcciones",
+    "text": "Direcciones de entrega"
+  },
+  {
+    "path": "/mi-cuenta/pagos",
+    "text": "Formas de pago"
+  },
+  {
+    "path": "/mi-cuenta/carrito",
+    "text": "Carrito de compras"
+  },
+  {
+    "path": "/mi-cuenta/ordenes",
+    "text": "Ordenes pasadas"
+  },
+  {
+    "path": "/mi-cuenta/favoritos",
+    "text": "Favoritos"
+  }
+]

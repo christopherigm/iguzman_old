@@ -1,0 +1,4 @@
+from .v_real_estate_classification import RealEstateClassificationViewSet
+from .v_real_estate_features import RealEstateFeatureViewSet
+from .v_real_estate_picture import RealEstatePictureViewSet
+from .v_real_estate import RealEstateViewSet

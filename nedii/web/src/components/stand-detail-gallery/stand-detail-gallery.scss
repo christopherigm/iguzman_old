@@ -1,0 +1,92 @@
+@import 'materialize-css';
+
+.StandDetailGallery .Swiper {
+  display: block;
+  overflow: hidden;
+
+  &__content {
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    @extend .white-text;
+
+    &--small {
+      height: 35vh;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    @extend .blue;
+  }
+
+  &__navigation-button {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    z-index: 3;
+    opacity: 0.55;
+    transition: all 0.25s;
+  
+    &--right {
+      right: 5px;
+    }
+
+    &--left {
+      left: 5px;
+    }
+  }
+
+  &__navigation-button:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  &__navigation-button:active {
+    opacity: 1;
+    transform: scale(0.9);
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .StandDetailGallery .Swiper {
+    &__navigation-button {
+      top: calc(50% - 25px);
+      outline: none;
+    
+      &--right {
+        right: 10px;
+      }
+  
+      &--left {
+        left: 10px;
+      }
+    }
+
+    &__content {
+      &--small {
+        height: 20vh;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .StandDetailGallery .Swiper {  
+    &__content {
+      height: 60vh;
+
+      &--small {
+        height: 35vh;
+      }
+    }
+  }
+}

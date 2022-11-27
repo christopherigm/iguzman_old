@@ -1,0 +1,26 @@
+replicaCount: 1
+
+image:
+  registry: docker.io
+  repository: registry
+  tag: 2
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  externalPort: 80
+  internalPort: 5000
+
+ingress:
+  enabled: true
+  tls: true
+  host: registry.iguzman.com.mx
+  bodySize: 1024m
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 64Mi

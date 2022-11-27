@@ -1,0 +1,40 @@
+@import 'materialize-css';
+@import 'src/constants/Constants.scss';
+
+.GenericItemDetail {
+  &__header {
+    position: relative;
+  }
+
+  .GenericCard {
+    padding: 12px !important;
+  }
+
+  .StrongText {
+    margin-top: 15px;
+  }
+
+  &__add-item-to-cart {
+    cursor: pointer;
+  }
+
+  &__add-item-to-cart {
+    margin-top: 20px;
+  }
+
+  &__buy-now {
+    margin-top: 10px;
+  }
+
+  .FavoriteButton {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .StandMealsAddons {
+    span {
+      width: 100%;
+    }
+  }
+}

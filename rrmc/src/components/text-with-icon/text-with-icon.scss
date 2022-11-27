@@ -1,0 +1,45 @@
+@import '../../../node_modules/materialize-css/sass/materialize.scss';
+@import '../../constants/Constants.scss';
+
+.TextWithIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 10px !important;
+  transition: all 0.5s;
+  width: 100%;
+  @extend .z-depth-1;
+
+  i {
+    font-size: 1.5em;
+    margin-right: 8px;
+  }
+
+  span {
+    font-size: 1em;
+    word-break: normal;
+  }
+}
+
+.TextWithIcon:hover {
+  @extend .z-depth-3;
+}
+
+.TextWithIconinfo {
+  margin-top: 3px;
+  font-size: $medium-text;
+
+  i {
+    font-size: $regular-text;
+    margin: 5px 5px 0 0 !important;
+  }
+}
+
+.BasicTextWithIcon {
+  height: 1.5em;
+  margin: 5px 0;
+  i {
+    margin: 0 4px !important;
+  }
+}

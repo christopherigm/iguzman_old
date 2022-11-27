@@ -1,0 +1,250 @@
+@import '../../../node_modules/materialize-css/sass/materialize.scss';
+
+$left-and-right-description-padding: 70px;
+$description-mobile-max-width: 280px;
+
+.PictureSlider {
+  display: block;
+  position: relative;
+
+  .Swiper {
+    display: block;
+    overflow: hidden;
+  
+    &__content {
+      display: block;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 50vh;
+      @extend .white-text;
+    }
+  
+    .swiper-pagination-bullet-active {
+      @extend .blue;
+    }
+  
+    &__navigation-button {
+      position: absolute;
+      display: none;
+      z-index: 1;
+      top: calc(50% - 20px);
+      width: 40px;
+      height: 40px;
+      border-radius: 40px;
+      background-position: center;
+      background-size: contain;
+      cursor: pointer;
+      z-index: 3;
+      opacity: 0.55;
+      transition: all 0.25s;
+    
+      &--right {
+        right: 5px;
+      }
+  
+      &--left {
+        left: 5px;
+      }
+    }
+  
+    &__navigation-button:hover {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  
+    &__navigation-button:active {
+      opacity: 1;
+      transform: scale(0.9);
+    }
+  }
+
+  &__description {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+
+    p {
+      margin: 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__text-wrapper {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: rgba($color: black, $alpha: 0.5);
+    border-radius: 6px;
+    box-sizing: border-box;
+
+    &--top {
+      max-width: $description-mobile-max-width;
+      left: calc(50% - 140px);
+      top: 15px;
+    }
+
+    &--center {
+      max-width: $description-mobile-max-width;
+      left: calc(50% - 140px);
+      top: calc(50% - 75px);
+    }
+
+    &--right {
+      width: auto;
+      max-width: 650px;
+      left: auto;
+      top: calc(50% - 75px);
+      right: 10px;
+
+      p, span, div {
+        text-align: right;
+      }
+    }
+
+    &--left {
+      width: auto;
+      max-width: 650px;
+      left: 10px;
+      top: calc(50% - 75px);
+
+      p, span, div {
+        text-align: left;
+      }
+    }
+
+    &--bottom {
+      max-width: $description-mobile-max-width;
+      left: calc(50% - 140px);
+      top: auto;
+      bottom: 35px;
+    }
+
+    &--bottom_right {
+      width: auto;
+      max-width: $description-mobile-max-width;
+      top: auto;
+      left: auto;
+      bottom: 35px;
+      right: 10px;
+
+      p, span, div {
+        text-align: right;
+      }
+    }
+
+    &--bottom_left {
+      width: auto;
+      max-width: $description-mobile-max-width;
+      top: auto;
+      left: 10px;
+      bottom: 35px;
+
+      p, span, div {
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .PictureSlider {
+    .Swiper {
+      &__navigation-button {
+        display: block;
+        outline: none;
+      
+        &--right {
+          right: 10px;
+        }
+    
+        &--left {
+          left: 10px;
+        }
+      }
+    }
+
+    &__text-wrapper {
+      padding: 10px 30px 25px;
+
+      &--top {
+        max-width: 600px;
+        left: calc(50% - 300px);
+        top: 35px;
+      }
+
+      &--center {
+        max-width: 600px;
+        left: calc(50% - 300px);
+        top: calc(50% - 75px);
+      }
+
+      &--right {
+        width: auto;
+        max-width: 600px;
+        left: auto;
+        top: calc(50% - 75px);
+        right: $left-and-right-description-padding;
+
+        p, span, div {
+          text-align: right;
+        }
+      }
+
+      &--left {
+        width: auto;
+        max-width: 600px;
+        left: $left-and-right-description-padding;
+        top: calc(50% - 75px);
+
+        p, span, div {
+          text-align: left;
+        }
+      }
+
+      &--bottom {
+        max-width: 600px;
+        left: calc(50% - 300px);
+        top: auto;
+        bottom: 40px;
+      }
+
+      &--bottom_right {
+        width: auto;
+        max-width: 600px;
+        top: auto;
+        left: auto;
+        bottom: 40px;
+        right: $left-and-right-description-padding;
+
+        p, span, div {
+          text-align: right;
+        }
+      }
+
+      &--bottom_left {
+        width: auto;
+        max-width: 600px;
+        top: auto;
+        left: $left-and-right-description-padding;
+        bottom: 40px;
+
+        p, span, div {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .PictureSlider .Swiper {  
+    &__content {
+      height: 60vh;
+    }
+  }
+}

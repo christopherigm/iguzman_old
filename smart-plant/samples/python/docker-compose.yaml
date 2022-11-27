@@ -1,0 +1,4 @@
+version: "3.9"
+services:
+  smart-plant-master-node:
+    image: christopherguzman/smart-plant-master-node:latest

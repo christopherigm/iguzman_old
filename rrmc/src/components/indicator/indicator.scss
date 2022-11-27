@@ -1,0 +1,25 @@
+@import '../../../node_modules/materialize-css/sass/materialize.scss';
+
+.Indicator {
+  width: 90px;
+  height: 50px;
+  float: right;
+  border-radius: 5px;
+  padding: 2px;
+  position: relative;
+  bottom: -33px;
+
+  &__icon {
+    text-align: center;
+  }
+
+  i{
+    font-size: 20px;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 15px;
+    line-height: 18px;
+  }
+}

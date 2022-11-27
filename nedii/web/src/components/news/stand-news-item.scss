@@ -1,0 +1,28 @@
+@import 'materialize-css';
+@import 'src/constants/Constants.scss';
+
+.StandNewsItem {
+  margin-top: 20px;
+
+  &__card {
+    transition: all 0.5s;
+    @extend .z-depth-1;
+  }
+
+  &__card:hover {
+    @extend .z-depth-3;
+  }
+
+  &__image {
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    border-bottom: solid 1px grey;
+  }
+
+  &__name {
+    font-size: $regular-text;
+    padding: 1em 0.5em;
+  }
+}

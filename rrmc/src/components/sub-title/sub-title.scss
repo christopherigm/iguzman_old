@@ -1,0 +1,12 @@
+@import '../../constants/Constants.scss';
+
+.SubTitle {
+  &__text {
+    display: block;
+    font-size: $subtitle-font-size;
+    font-weight: $slim-font-weight;
+    line-height: 1.6em;
+    text-align: center;
+    width: 100%;
+  }
+}

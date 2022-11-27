@@ -1,0 +1,119 @@
+@import 'materialize-css';
+
+.HomeRestaurantsGrid {
+  width: 100%;
+
+  .swiper-pagination-bullets {
+    bottom: 25px !important;
+  }
+
+  .Swiper {
+    display: block;
+    overflow: hidden;
+  
+    .swiper-pagination-bullet-active {
+      @extend .white;
+    }
+
+    &__navigation-button {
+      position: absolute;
+      display: none;
+      z-index: 11 !important;
+      top: calc(50% - 20px);
+      width: 40px;
+      height: 40px;
+      border-radius: 40px;
+      background-position: center;
+      background-size: contain;
+      cursor: pointer;
+      z-index: 3;
+      opacity: 0.8;
+      transition: all 0.25s;
+    
+      &--right {
+        right: 5px;
+      }
+  
+      &--left {
+        left: 5px;
+      }
+    }
+  
+    &__navigation-button:hover {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  
+    &__navigation-button:active {
+      opacity: 1;
+      transform: scale(0.9);
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+    height: 740px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+  }
+
+  &__gradient {
+    width: 100%;
+    height: 100%;
+    background: rgb(255,162,0);
+    background: linear-gradient(180deg, rgba(255,162,0,0.27244401178440125) 0%, rgba(255,162,0,1) 100%);
+  }
+
+  &__stand-logo {
+    margin: 0 auto;
+    width: 140px;
+    height: 140px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .HomeRestaurantsGrid {
+    .Swiper {
+      &__navigation-button {
+        display: block;
+        outline: none;
+      
+        &--right {
+          right: 10px;
+        }
+    
+        &--left {
+          left: 10px;
+        }
+      }
+    }
+    &__wrapper {
+      height: 540px;
+    }
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .HomeRestaurantsGrid {
+    &__wrapper {
+      height: 650px;
+      background-position: left center;
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      background-color: white;
+    }
+    
+    &__gradient {
+      width: 100%;
+      height: 100%;
+      background: rgb(255,162,0);
+      background: linear-gradient(90deg, rgba(255,162,0,0.3) 0%, rgba(255,162,0,1) 65%);
+    }
+  }
+}

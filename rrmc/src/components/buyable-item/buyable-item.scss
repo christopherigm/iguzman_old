@@ -1,0 +1,133 @@
+@import '../../../node_modules/materialize-css/sass/materialize.scss';
+@import '../../constants/Constants.scss';
+
+.BuyableItem {
+  margin-bottom: 20px;
+
+  .GenericCard {
+    border-radius: 0;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+
+  &__image-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 10px;
+    overflow: hidden;
+
+    &--mini {
+      height: 100px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.2s;
+  }
+
+  &__description {
+    opacity: 0;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    background-color: rgba($color: #FFFFFF, $alpha: 0.8);
+    padding: 10px;
+    transition: all 0.2s;
+  }
+
+  .GenericCard:hover &__description {
+    opacity: 1;
+    bottom: 0;
+  }
+
+  &__discount-label {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 5px 10px;
+  }
+  
+  &__info {
+    position: relative;
+    padding: 0 10px;
+  }
+
+  &__name {
+    display: block;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: bold;
+    
+    &--mini {
+      font-size: 1em;
+    }
+  }
+
+  &__price {
+    font-size: 1.3em;
+    
+    &--mini {
+      font-size: 1.1em;
+    }
+  }
+
+  &__discount {
+    margin-left: 8px;
+    text-decoration: line-through;
+  }
+
+  .FavoriteButton {
+    position: absolute;
+    right: 3px;
+    bottom: -6px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .BuyableItem {
+    &__image-container {
+      height: 200px;
+    
+      &--mini {
+        height: 120px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .BuyableItem {
+    .GenericCard:hover &__image {
+      transform: scale(1.1);
+    }
+
+    &__image-container {
+      height: 240px;
+
+      &--mini {
+        height: 170px;
+      }
+    }
+
+    &__price {
+      font-size: 1.6em;
+    
+      &--mini {
+        font-size: 1.2em;
+      }
+    }
+
+    .FavoriteButton {
+      right: 8px;
+      bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import 'materialize-css';
+@import 'src/constants/Constants.scss';
+
+.CardHolder {
+  margin-bottom: 16px;
+
+  .GenericCard {
+    padding: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__flex-filler {
+    flex-shrink: 2;
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  &__container-logo{
+    display: flex;
+    align-items: center;
+  }
+
+  &__img-logo{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+  }
+
+  &__info {
+    padding: 0 10px 10px 10px;
+  }
+
+  .BasicIcon {
+    padding: 0;
+    border-radius: 0;
+    margin: 4px 0;
+  }
+}

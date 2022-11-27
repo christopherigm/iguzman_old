@@ -1,0 +1,58 @@
+$edit-icon-size: 35px;
+$user-image-size: 160px;
+
+.UserAccountConfigurations {
+  &__input,
+  .GenericTextInput {
+    margin: 0 0 10px !important;
+  }
+
+  &__user-image-wrapper {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: $user-image-size;
+    height: $user-image-size;
+  }
+
+  &__user-image {
+    width: $user-image-size;
+    height: $user-image-size;
+    border-radius: $user-image-size;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__user-image-input-wrapper {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: $edit-icon-size;
+    height: $edit-icon-size;
+    border-radius: $edit-icon-size;
+    overflow: hidden;
+  }
+  
+  &__user-image-input-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $edit-icon-size;
+    height: $edit-icon-size;
+    line-height: $edit-icon-size !important;
+    text-align: center;
+  }
+
+  &__user-image-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $edit-icon-size;
+    height: $edit-icon-size;
+    opacity: 0;
+    z-index: 2;
+  }
+}

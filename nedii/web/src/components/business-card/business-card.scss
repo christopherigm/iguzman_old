@@ -1,0 +1,65 @@
+@import 'materialize-css';
+@import 'src/constants/Constants.scss';
+
+.BusinessCard {
+  &__section {
+    padding: 1em;
+    margin: 0;
+  }
+
+  &__selected {
+    @extend .cyan-text;
+  }
+
+  &__image_profile {
+    width: 220px;
+    height: 220px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  &__contact {
+    margin-bottom: 8px;
+  }
+
+  &__select_icon {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__section_icon__text {
+    font-size: $regular-text;
+  }
+
+  &__section_icon {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    transition: all 0.5s;
+    @extend .white;
+
+    i {
+      font-size: $title-font-size;
+    }
+  }
+}
+
+.BusinessCard .row {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .BusinessCard{
+    &__select_icon {
+      margin-bottom: 24px;
+    }
+  }
+}
